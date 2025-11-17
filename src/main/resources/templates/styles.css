@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+/* 1. Контейнер, использующий Flexbox */
+.container {
+    display: flex;          /* Включаем режим Flexbox */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    gap: 20px;              /* Отступы между колонками */
+}
+
+/* 2. Общие стили для каждого блока со списком */
+.list-box {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 3. Управление шириной и позиционированием */
+.left-box, .right-box {
+    /* Левый и правый блоки займут одинаковое количество места */
+    flex: 1;
+}
+
+.center-box {
+    /* Центральный блок может быть чуть шире или иметь фиксированную ширину, если нужно */
+    flex: 2; /* Займет в два раза больше места, чем левый или правый */
+}
+
+
+/* 4. Заливка цветом для каждого списка */
+.color-one {
+    background-color: #e3f2fd; /* Светло-голубой фон */
+    border: 1px solid #1e88e5;
+}
+
+.color-two {
+    background-color: #f1f8e9; /* Светло-зеленый фон */
+    border: 1px solid #4caf50;
+}
+
+.color-three {
+    background-color: #ffecb3; /* Светло-оранжевый фон */
+    border: 1px solid #ff9800;
+}
+
+/* Дополнительные стили для самого списка UL и элементов LI */
+ul {
+    list-style-type: none; /* Убираем стандартные маркеры */
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный фон для элементов */
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
